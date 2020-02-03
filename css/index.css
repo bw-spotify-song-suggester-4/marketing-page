@@ -168,7 +168,15 @@ header {
   background-size: cover;
   background-position: center;
 }
-header p {
+header .rectangle1 {
+  width: 446px;
+  background: radial-gradient(196.56% 824.49% at 66.75% -23.66%, rgba(14, 11, 32, 0.36) 70.31%, rgba(239, 1, 159, 0.0825) 85.42%);
+}
+header .rectangle2 {
+  width: 556px;
+  background: radial-gradient(196.56% 824.49% at 66.75% -23.66%, rgba(14, 11, 32, 0.42) 70.31%, rgba(239, 1, 159, 0.0825) 85.42%);
+}
+header .rectangle2 p {
   font-size: 3.6rem;
   font-family: 'Abril Fatface', cursive;
 }
