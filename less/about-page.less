@@ -1,0 +1,39 @@
+.aboutHeader {
+    height: 270px;
+    .backgroundImage(url('../img/about-bg.jpg')); //TODO change image to a smaller one    
+    .displayFlex(@direction: column, @align: flex-start, @justify: space-between);
+
+    img {
+        padding-top: 3%;
+    }
+}
+
+.aboutSection {
+    .container {
+        .container();
+
+        .teamSection {
+            .displayFlex(@justify: space-around);
+            flex-wrap: wrap;
+
+            .sectionName {
+                width: 100%;
+                margin: 7% 0 2%;
+                font-size: 3.8rem;
+            }
+
+            .teamMember {
+                .displayFlex(@direction: column);
+
+                .memberName {
+                    font-size: 3rem;
+                }
+
+                img {
+                    width: 200px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
