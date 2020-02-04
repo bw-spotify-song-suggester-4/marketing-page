@@ -198,6 +198,7 @@ header img {
   padding: 6% 0 1% 10%;
   object-fit: cover;
   object-position: center;
+  max-width: 100%;
 }
 header .rectangle1 {
   width: 446px;
@@ -205,6 +206,11 @@ header .rectangle1 {
   background: radial-gradient(196.56% 824.49% at 66.75% -23.66%, rgba(14, 11, 32, 0.36) 70.31%, rgba(239, 1, 159, 0.0825) 85.42%);
   margin-bottom: 3%;
   padding-left: 10%;
+}
+@media (max-width: 500px) {
+  header .rectangle1 {
+    width: 100%;
+  }
 }
 header .rectangle2 {
   width: 556px;
@@ -226,8 +232,15 @@ header .btnContainer {
   right: 10%;
   bottom: 15%;
 }
+@media (max-width: 500px) {
+  header .btnContainer {
+    flex-direction: column;
+    width: 100%;
+    right: 0;
+  }
+}
 header .btnContainer .btn {
-  width: 270px;
+  width: 240px;
   height: 70px;
   color: #FFFFFF;
   text-decoration: none;
@@ -249,8 +262,27 @@ header .btnContainer .btn:hover {
   background-color: rgba(239, 1, 159, 0.95);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+@media (max-width: 800px) {
+  header .btnContainer .btn {
+    width: 200px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 500px) {
+  header .btnContainer .btn {
+    width: 80%;
+    height: 50px;
+  }
+}
 header .btnContainer .btn.btnLeft {
   margin-right: 4%;
+}
+@media (max-width: 500px) {
+  header .btnContainer .btn.btnLeft {
+    margin-right: 0;
+    margin-bottom: 4%;
+  }
 }
 section {
   background-color: #171330;
@@ -307,8 +339,14 @@ section .container .box .icons {
 }
 section .container .box .icons .iconsRow {
   width: 100%;
+  padding: 2% 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 800px) {
+  section .container .box .icons .iconsRow img {
+    width: 65px;
+  }
 }

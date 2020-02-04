@@ -10,6 +10,7 @@ header {
         
         object-fit: cover;
         object-position: center;
+        max-width: 100%;
     }
 
     .rectangle1 {
@@ -19,6 +20,10 @@ header {
 
         margin-bottom: 3%;
         padding-left: 10%;
+
+        @media @mobile {
+            width: 100%;
+        }
     }
 
     .rectangle2 {
@@ -39,8 +44,15 @@ header {
         position: absolute;
         right: 10%;
         bottom: 15%;
+        
+        @media @mobile {
+            flex-direction: column;   
+            width: 100%;
+            right: 0;
+        }
+
         .btn {
-            width: 270px;
+            width: 240px;
             height: 70px;
     
             color: @whammy-white;
@@ -56,9 +68,25 @@ header {
     
             .displayFlex();
             .hoverEffect(fadeout(@plush-pink, 5%));
+
+            @media @tablet {
+                width: 200px;
+                height: 60px;
+                font-size: 1.8rem;
+            }
+
+            @media @mobile {
+                width: 80%;
+                height: 50px;
+            }
     
             &.btnLeft {
                 margin-right: 4%;
+
+                @media @mobile {
+                    margin-right: 0;
+                    margin-bottom: 4%;
+                }
             }
         }
     }
@@ -111,7 +139,14 @@ section {
                 
                 .iconsRow {
                     width: 100%;
+                    padding: 2% 0;
                     .displayFlex(@justify: space-around);
+                    
+                    img {
+                        @media @tablet {
+                            width: 65px;
+                        }                        
+                    }
                 }
             }   
         }
