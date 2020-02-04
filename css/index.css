@@ -195,7 +195,7 @@ header {
   background-position: center;
 }
 header img {
-  padding: 6% 0 1% 10%;
+  padding: 6% 10% 1% 10%;
   object-fit: cover;
   object-position: center;
   max-width: 100%;
