@@ -34,28 +34,32 @@ header {
         }
     }
 
-    .btn {
+    .btnContainer {
+        .displayFlex(@justify: flex-end);
         position: absolute;
-        width: 320px;
-        height: 80px;
         right: 10%;
         bottom: 15%;
-
-        color: @whammy-white;
-        text-decoration: none;
-        font-family: @button-font;
-        font-weight: 900;
-        font-size: 2.4rem;
-        text-transform: uppercase;
-        
-        border-radius: 35px;
-        background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 0%, rgba(239, 1, 159, 0) 100%);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-        .displayFlex();
-
-        &:hover {
-            background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 40%, rgba(239, 1, 159, 0) 100%);
+        .btn {
+            width: 270px;
+            height: 70px;
+    
+            color: @whammy-white;
+            text-decoration: none;
+            font-family: @button-font;
+            font-weight: 900;
+            font-size: 2.4rem;
+            text-transform: uppercase;
+            
+            border-radius: 35px;
+            background-color: fadeout(@plush-pink, 30%);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+            .displayFlex();
+            .hoverEffect(fadeout(@plush-pink, 5%));
+    
+            &.btnLeft {
+                margin-right: 4%;
+            }
         }
     }
 }
