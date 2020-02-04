@@ -194,9 +194,7 @@ header {
   background-position: center;
 }
 header img {
-  padding: 6% 0 1% 10%;
-  object-fit: cover;
-  object-position: center;
+  padding: 1%;
 }
 header .rectangle1 {
   width: 446px;
@@ -238,6 +236,42 @@ header .btn {
 }
 header .btn:hover {
   background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 40%, rgba(239, 1, 159, 0) 100%);
+}
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar a {
+  width: 200px;
+  height: 50px;
+  right: 10%;
+  bottom: 15%;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  border-radius: 35px;
+  background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 0%, rgba(239, 1, 159, 0) 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar a:hover {
+  background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 40%, rgba(239, 1, 159, 0) 100%);
+}
+header .navbar .navItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 section {
   background-color: #171330;
