@@ -59,3 +59,57 @@ header {
         }
     }
 }
+
+section {
+    background-color: @cool-blue;
+    .displayFlex();
+
+    .container {
+        .displayFlex(@justify: space-between);
+        flex-wrap: wrap;
+        margin: 7% 10%;
+        max-width: 800px;
+
+        .box {
+            border: 4px solid #FFFFFF;
+            padding: 2% 3%;
+            width: 49%;
+            height: 340px;
+            margin-bottom: 2%;
+            text-align: center;
+
+            .displayFlex(@direction: column, @justify: flex-start);
+
+            @media @small-desktop {
+                height: 390px;
+            }
+
+            @media @tablet {
+                height: 440px;
+            }
+    
+            h3, p {
+                width: 80%;
+            }
+
+            h3 {
+                font-size: 2.4rem;
+                line-height: 3.2rem;
+            }
+
+            p {
+                margin: 5% 0;
+                line-height: 2.2rem;
+            }
+
+            .icons {
+                width: 100%;
+                
+                .iconsRow {
+                    width: 100%;
+                    .displayFlex(@justify: space-around);
+                }
+            }   
+        }
+    }
+}
