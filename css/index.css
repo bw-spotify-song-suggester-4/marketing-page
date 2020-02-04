@@ -194,6 +194,12 @@ header {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 500px) {
+  header {
+    background: url('../img/homepage-bg_mobile.jpg');
+    background-position: center;
+  }
+}
 header img {
   padding: 6% 10% 1% 10%;
   object-fit: cover;
