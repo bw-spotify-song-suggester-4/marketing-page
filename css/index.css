@@ -285,14 +285,14 @@ section .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 7% 10%;
-  max-width: 800px;
+  max-width: 1400px;
 }
 section .container .box {
   border: 4px solid #FFFFFF;
   padding: 2% 3%;
-  width: 49%;
+  width: 100%;
   height: 340px;
   margin-bottom: 2%;
   text-align: center;
