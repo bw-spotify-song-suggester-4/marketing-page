@@ -480,6 +480,7 @@ footer p {
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 @media (max-width: 500px) {
   .aboutSection .container .aboutText {
