@@ -229,6 +229,9 @@ p {
     height: 50px;
   }
 }
+section {
+  overflow: hidden;
+}
 .homeHeader {
   height: 100vh;
   background: url('../img/homepage-bg.jpg');
