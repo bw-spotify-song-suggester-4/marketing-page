@@ -35,16 +35,17 @@
 }
 
 // Rectangle1
-.fadedRectangle() {
-    width: 446px;
+.fadedRectangle(@width: 100%) {
+    width: @width;
     max-width: 100%;
     .backgroundLayer();
 
-    margin-bottom: 3%;
     padding-left: 10%;
 
     @media @mobile {
         width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 }
 
@@ -80,17 +81,26 @@
     }
 }
 
-// Crooked Background
-.crookedBackground(@color, @fadeout: 60%) {
+.afterFadedLayer(@color, @fadeout: 60%) {
     position: relative;
     &:after {
         position: absolute;
         content: '';
         width: 100%;
         height: 100%;
+        top: 0;
+        left: 0;
+        background: fadeout(@color, @fadeout);
+    }
+}
+
+// Crooked Background
+.crookedBackground(@color, @fadeout: 60%) {
+    .afterFadedLayer(@color, @fadeout);
+
+    &:after {
         top: 12px;
         left: 10px;
-        background: fadeout(@color, @fadeout);
         z-index: -1;
     }
 }

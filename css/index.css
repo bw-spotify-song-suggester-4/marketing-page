@@ -258,41 +258,79 @@ footer p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .homeHeader {
     background: url('../img/homepage-bg_mobile.jpg');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
-.homeHeader img {
-  margin: 6% 10% 1% 10%;
+.homeHeader .topHeaderContainer {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.homeHeader .topHeaderContainer img {
+  margin: 2% 10% 0 10%;
   object-fit: cover;
   object-position: center;
   max-width: 80%;
 }
-.homeHeader .rectangle1 {
+@media (max-width: 500px) {
+  .homeHeader .topHeaderContainer img {
+    margin: 10% 10% 1% 10%;
+  }
+}
+.homeHeader .topHeaderContainer .rectangle1 {
   width: 446px;
   max-width: 100%;
   background: rgba(14, 11, 32, 0.35);
-  margin-bottom: 3%;
   padding-left: 10%;
 }
 @media (max-width: 500px) {
-  .homeHeader .rectangle1 {
+  .homeHeader .topHeaderContainer .rectangle1 {
     width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 }
-.homeHeader .rectangle2 {
+@media (max-width: 500px) {
+  .homeHeader .topHeaderContainer .rectangle1 h2 {
+    font-size: 3.5rem;
+  }
+}
+.homeHeader .topHeaderContainer .rectangle2 {
   width: 556px;
   max-width: 100%;
-  padding-bottom: 10px;
-  padding-left: 10%;
   background: rgba(14, 11, 32, 0.35);
+  padding-left: 10%;
+  padding-bottom: 10px;
 }
-.homeHeader .rectangle2 p {
+@media (max-width: 500px) {
+  .homeHeader .topHeaderContainer .rectangle2 {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+.homeHeader .topHeaderContainer .rectangle2 p {
   font-size: 3.6rem;
   font-family: 'Abril Fatface', cursive;
+  padding-right: 10%;
+}
+@media (max-width: 500px) {
+  .homeHeader .topHeaderContainer .rectangle2 p {
+    font-size: 2.7rem;
+  }
 }
 .homeHeader .btnContainer {
   display: flex;
@@ -430,7 +468,6 @@ footer p {
   width: 446px;
   max-width: 100%;
   background: rgba(14, 11, 32, 0.35);
-  margin-bottom: 3%;
   padding-left: 10%;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -438,6 +475,8 @@ footer p {
 @media (max-width: 500px) {
   .aboutHeader .rectangle1 {
     width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 }
 .aboutHeader h1 {
@@ -460,9 +499,13 @@ footer p {
   content: '';
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(239, 1, 159, 0.4);
+}
+.aboutSection .highlight:after {
   top: 12px;
   left: 10px;
-  background: rgba(239, 1, 159, 0.4);
   z-index: -1;
 }
 .aboutSection .highlight:after {
@@ -547,9 +590,13 @@ footer p {
   content: '';
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(239, 1, 159, 0.4);
+}
+.aboutSection .container .teamSection .sectionName:after {
   top: 12px;
   left: 10px;
-  background: rgba(239, 1, 159, 0.4);
   z-index: -1;
 }
 .aboutSection .container .teamSection .teamSectionContainer {
