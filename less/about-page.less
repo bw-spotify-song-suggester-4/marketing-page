@@ -24,12 +24,6 @@
 }
 
 .aboutSection {
-    margin: 7% 0;
-
-    @media @mobile {
-        margin: 100px 0;
-    }
-
     p {
         font-size: 2rem;
     }
@@ -51,21 +45,26 @@
         .container();
 
         .aboutText {
-            padding: 10% 12%;
+            padding: 10% 20%;
             margin-bottom: 7%;
             text-align: center;
-            line-height: 2.5rem;
+            line-height: 1.5;
             .displayFlex(@direction: column);
             .backgroundLayer(black, 80%);
-            border-radius: 15px;
+            border-radius: 15px;            
 
             @media @mobile {
                 margin-bottom: 100px;
+                padding: 10% 10%;
             }
 
-            &>p {
-                margin-bottom: 7%;
-            }
+            p {
+                .displayFlex(@direction: column);
+
+                span {
+                    margin-bottom: 20px;
+                }
+            }            
 
             div {
                 width: 100%;
