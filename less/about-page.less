@@ -27,7 +27,7 @@
     margin: 7% 0;
 
     @media @mobile {
-        margin: 10% 0;
+        margin: 100px 0;
     }
 
     p {
@@ -51,14 +51,15 @@
         .container();
 
         .aboutText {
-            max-width: 800px;
-            margin: 0 auto 7%;
+            padding: 10% 12%;
+            margin-bottom: 7%;
             text-align: center;
             line-height: 2.5rem;
             .displayFlex(@direction: column);
+            .backgroundLayer(black, 80%);
 
             @media @mobile {
-                margin-bottom: 12%;
+                margin-bottom: 100px;
             }
 
             &>p {
@@ -69,6 +70,19 @@
                 width: 100%;
                 .displayFlex(@justify: space-around);
                 flex-wrap: wrap;
+
+                @media @tablet {
+                    * {
+                        margin: 5% 0;
+                    }
+                }
+
+                @media @mobile {
+                    * {
+                        margin: 10% 0;
+                    }
+                }
+
 
                 .why {
                     font-family: @header-font;

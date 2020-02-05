@@ -439,7 +439,7 @@ footer p {
 }
 @media (max-width: 500px) {
   .aboutSection {
-    margin: 10% 0;
+    margin: 100px 0;
   }
 }
 .aboutSection p {
@@ -471,18 +471,19 @@ footer p {
   margin: 0 10%;
 }
 .aboutSection .container .aboutText {
-  max-width: 800px;
-  margin: 0 auto 7%;
+  padding: 10% 12%;
+  margin-bottom: 7%;
   text-align: center;
   line-height: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 500px) {
   .aboutSection .container .aboutText {
-    margin-bottom: 12%;
+    margin-bottom: 100px;
   }
 }
 .aboutSection .container .aboutText > p {
@@ -495,6 +496,16 @@ footer p {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  .aboutSection .container .aboutText div * {
+    margin: 5% 0;
+  }
+}
+@media (max-width: 500px) {
+  .aboutSection .container .aboutText div * {
+    margin: 10% 0;
+  }
 }
 .aboutSection .container .aboutText div .why {
   font-family: 'Abril Fatface', cursive;
