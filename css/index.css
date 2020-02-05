@@ -293,8 +293,9 @@ p {
   }
 }
 .homeSection {
+  margin: 7% 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -305,7 +306,7 @@ p {
   align-items: center;
   flex-wrap: wrap;
   max-width: 800px;
-  margin: 7% 10%;
+  margin: 0 10%;
 }
 .homeSection .container .box {
   border: 4px solid #FFFFFF;
@@ -370,6 +371,45 @@ p {
     width: 80px;
   }
 }
+.homeSection .btn {
+  width: 240px;
+  height: 70px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  border-radius: 35px;
+  background-color: rgba(239, 1, 159, 0.7);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color, box-shadow;
+  transition-duration: 200ms;
+  width: 400px;
+  height: 60px;
+  margin-top: 5%;
+}
+.homeSection .btn:hover {
+  background-color: rgba(239, 1, 159, 0.95);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 800px) {
+  .homeSection .btn {
+    width: 200px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .homeSection .btn {
+    width: 80%;
+    height: 50px;
+  }
+}
 footer {
   width: 100%;
   padding: 2% 10%;
@@ -415,8 +455,11 @@ footer p {
 .aboutHeader h1 {
   font-size: 4.5rem;
 }
+.aboutSection {
+  margin: 7% 0;
+}
 .aboutSection .container {
-  margin: 7% 10%;
+  margin: 0 10%;
 }
 .aboutSection .container .aboutText {
   max-width: 800px;

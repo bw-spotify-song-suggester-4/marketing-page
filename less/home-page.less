@@ -46,17 +46,6 @@
 
         .btn {
             .btn();
-
-            @media @tablet {
-                width: 200px;
-                height: 60px;
-                font-size: 1.8rem;
-            }
-
-            @media @mobile {
-                width: 80%;
-                height: 50px;
-            }
     
             &.btnLeft {
                 margin-right: 4%;
@@ -71,7 +60,8 @@
 }
 
 .homeSection {
-    .displayFlex();
+    margin: 7% 0;
+    .displayFlex(@direction: column);
 
     .container {
         .displayFlex(@justify: space-between);
@@ -137,6 +127,13 @@
                 }
             }   
         }
+    }
+
+    .btn {
+        .btn();
+        width: 400px;
+        height: 60px;
+        margin-top: 5%;
     }
 }
 

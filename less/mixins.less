@@ -18,7 +18,7 @@
 }
 
 .container() {
-    margin: 7% 10%;
+    margin: 0 10%;
 }
 
 // Background image
@@ -66,6 +66,17 @@
 
     .displayFlex();
     .hoverEffect(fadeout(@plush-pink, 5%));
+
+    @media @tablet {
+        width: 200px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+
+    @media @mobile {
+        width: 80%;
+        height: 50px;
+    }
 }
 
 // Crooked Background
