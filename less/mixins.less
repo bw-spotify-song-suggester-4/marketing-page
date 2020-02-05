@@ -29,9 +29,9 @@
     background-size: cover;
 }
 
-// Dark background layer
-.darkBackgroundLayer() {
-    background: radial-gradient(196.56% 824.49% at 66.75% -23.66%, rgba(14, 11, 32, 0.36) 70.31%, rgba(239, 1, 159, 0.0825) 85.42%);
+// Background layer
+.backgroundLayer(@color: rgba(14, 11, 32, 0.36), @fadeout: 1%) {
+    background: fadeout(@color, @fadeout);
 }
 
 // Button 
@@ -55,15 +55,18 @@
 }
 
 // Crooked Background
-.crookedBackground(@color) {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    
-    position: absolute;
-    top: 12px;
-    left: 10px;
-    background-color: fadeout(@color, 60%);
+.crookedBackground(@color, @fadeout: 40%) {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 12px;
+        left: 10px;
+        background: fadeout(@color, @fadeout);
+        z-index: -1;
+    }
 }
 
 // TODO create mixin for dark layer rectangle

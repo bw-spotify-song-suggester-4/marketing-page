@@ -37,15 +37,17 @@
             .displayFlex(@direction: column);
             flex-wrap: wrap;
 
+            padding: 4%;
+            margin: 4% 0;
+            .backgroundLayer(black, 80%);
+            border-radius: 15px;
+
             .sectionName {
                 margin: 7% 0 2%;
                 font-size: 3.8rem;
-                position: relative;
                 align-self: flex-start;
 
-                span {
-                    .crookedBackground(@plush-pink);
-                }
+                .crookedBackground(@plush-pink);
             }
             .teamSectionContainer {
                 .displayFlex();
@@ -54,6 +56,10 @@
                 .teamMember {
                     .displayFlex(@direction: column);
                     margin: 4% 6%;
+
+                    @media @mobile {
+                        margin: 10% 6%;
+                    }
     
                     .memberName {
                         font-size: 2.5rem;
