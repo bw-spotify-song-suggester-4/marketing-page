@@ -1,15 +1,19 @@
 .aboutHeader {
-    height: 270px;
+    height: 320px;
     .backgroundImage(url('../img/about-bg.jpg')); //TODO change image to a smaller one    
     .displayFlex(@direction: column, @align: flex-start, @justify: space-between);
 
     img {
-        padding-top: 3%;
+        padding: 4% 10% 1% 10%;
     }
 
     .rectangle1 {
         padding-top: 1%;
         padding-bottom: 1%;
+    }
+
+    h1 {
+        font-size: 4.5rem;
     }
 }
 
@@ -17,38 +21,55 @@
     .container {
         .container();
 
+        .aboutText {
+            max-width: 800px;
+            margin: 0 auto 7%;
+            text-align: center;
+            line-height: 2.5rem;
+        }
+
         h2 {
             text-align: center;
         }
 
         .teamSection {
-            .displayFlex(@justify: space-around);
+            .displayFlex(@direction: column);
             flex-wrap: wrap;
 
             .sectionName {
-                width: 100%;
                 margin: 7% 0 2%;
                 font-size: 3.8rem;
-            }
+                position: relative;
+                align-self: flex-start;
 
-            .teamMember {
-                .displayFlex(@direction: column);
-                margin: 4% 6%;
-
-                .memberName {
-                    font-size: 2.5rem;
-                }
-
-                .description {
-                    font-size: 1.8rem;
-                    // font-style: italic;
-                }
-
-                img {
-                    width: 200px;
-                    border-radius: 50%;
+                span {
+                    .crookedBackground(@plush-pink);
                 }
             }
+            .teamSectionContainer {
+                .displayFlex();
+                width: 100%;
+                flex-wrap: wrap;
+                .teamMember {
+                    .displayFlex(@direction: column);
+                    margin: 4% 6%;
+    
+                    .memberName {
+                        font-size: 2.5rem;
+                    }
+    
+                    .description {
+                        font-size: 1.8rem;
+                        // font-style: italic;
+                    }
+    
+                    img {
+                        width: 200px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            
         }
     }
 }

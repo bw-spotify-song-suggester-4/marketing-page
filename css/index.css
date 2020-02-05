@@ -10,14 +10,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFlnl0k30e0.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFlnl0k30e0.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
@@ -225,7 +225,7 @@ header .rectangle2 {
   max-width: 100%;
   padding-bottom: 10px;
   padding-left: 10%;
-  background: radial-gradient(196.56% 824.49% at 66.75% -23.66%, rgba(14, 11, 32, 0.42) 70.31%, rgba(239, 1, 159, 0.0825) 85.42%);
+  background: radial-gradient(196.56% 824.49% at 66.75% -23.66%, rgba(14, 11, 32, 0.36) 70.31%, rgba(239, 1, 159, 0.0825) 85.42%);
 }
 header .rectangle2 p {
   font-size: 3.6rem;
@@ -372,19 +372,19 @@ header .btnContainer .btn.btnLeft {
 }
 footer {
   width: 100%;
-  background: radial-gradient(196.56% 824.49% at 66.75% -23.66%, rgba(14, 11, 32, 0.36) 70.31%, rgba(239, 1, 159, 0.0825) 85.42%);
   padding: 2% 10%;
+  background: radial-gradient(196.56% 824.49% at 66.75% -23.66%, rgba(14, 11, 32, 0.36) 70.31%, rgba(239, 1, 159, 0.0825) 85.42%);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 footer p {
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 .aboutHeader {
-  height: 270px;
+  height: 320px;
   background: url('../img/about-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -395,44 +395,71 @@ footer p {
   align-items: flex-start;
 }
 .aboutHeader img {
-  padding-top: 3%;
+  padding: 4% 10% 1% 10%;
 }
 .aboutHeader .rectangle1 {
   padding-top: 1%;
   padding-bottom: 1%;
 }
+.aboutHeader h1 {
+  font-size: 4.5rem;
+}
 .aboutSection .container {
   margin: 7% 10%;
+}
+.aboutSection .container .aboutText {
+  max-width: 800px;
+  margin: 0 auto 7%;
+  text-align: center;
+  line-height: 2.5rem;
 }
 .aboutSection .container h2 {
   text-align: center;
 }
 .aboutSection .container .teamSection {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 .aboutSection .container .teamSection .sectionName {
-  width: 100%;
   margin: 7% 0 2%;
   font-size: 3.8rem;
+  position: relative;
+  align-self: flex-start;
 }
-.aboutSection .container .teamSection .teamMember {
+.aboutSection .container .teamSection .sectionName span {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  background-color: rgba(239, 1, 159, 0.4);
+}
+.aboutSection .container .teamSection .teamSectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.aboutSection .container .teamSection .teamSectionContainer .teamMember {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 4% 6%;
 }
-.aboutSection .container .teamSection .teamMember .memberName {
+.aboutSection .container .teamSection .teamSectionContainer .teamMember .memberName {
   font-size: 2.5rem;
 }
-.aboutSection .container .teamSection .teamMember .description {
+.aboutSection .container .teamSection .teamSectionContainer .teamMember .description {
   font-size: 1.8rem;
 }
-.aboutSection .container .teamSection .teamMember img {
+.aboutSection .container .teamSection .teamSectionContainer .teamMember img {
   width: 200px;
   border-radius: 50%;
 }
