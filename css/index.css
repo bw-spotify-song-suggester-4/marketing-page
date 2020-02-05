@@ -154,6 +154,7 @@ table {
   box-sizing: border-box;
 }
 html {
+  overflow-x: hidden;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -369,6 +370,19 @@ header .btnContainer .btn.btnLeft {
     width: 80px;
   }
 }
+footer {
+  width: 100%;
+  background: radial-gradient(196.56% 824.49% at 66.75% -23.66%, rgba(14, 11, 32, 0.36) 70.31%, rgba(239, 1, 159, 0.0825) 85.42%);
+  padding: 2% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  width: 50%;
+  text-align: center;
+}
 .aboutHeader {
   height: 270px;
   background: url('../img/about-bg.jpg');
@@ -410,9 +424,13 @@ header .btnContainer .btn.btnLeft {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 4% 6%;
 }
 .aboutSection .container .teamSection .teamMember .memberName {
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+.aboutSection .container .teamSection .teamMember .description {
+  font-size: 1.8rem;
 }
 .aboutSection .container .teamSection .teamMember img {
   width: 200px;
