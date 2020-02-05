@@ -383,8 +383,15 @@ header .btnContainer .btn.btnLeft {
 .aboutHeader img {
   padding-top: 3%;
 }
+.aboutHeader .rectangle1 {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
 .aboutSection .container {
   margin: 7% 10%;
+}
+.aboutSection .container h2 {
+  text-align: center;
 }
 .aboutSection .container .teamSection {
   display: flex;
