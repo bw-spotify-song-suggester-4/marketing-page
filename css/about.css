@@ -1,6 +1,106 @@
 body {
-  background-color: red;
+  background-color: #171330;
 }
 body .aboutPage {
-  background-color: rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../Img/img/AdobeStock_188698373\ 2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body h1 {
+  font-size: 80px;
+  color: #FFFFFF;
+}
+body p {
+  padding: 5%;
+  margin: 2% 0;
+  line-height: 2.2rem;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75));
+}
+body .Team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .Team h2 {
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+body .Team .Carlos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+body .Team .Fabricio {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+body .Team .Ivan {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+body .Team .John {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+body .Team .Ross {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+body .Team .Raj {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+body .Team .Sarah {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+body .Team .Shanda {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+body .Team .Claudia {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+body .Team .Lee {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+body .Team img {
+  padding: 2%;
+  border-radius: 50%;
+  width: 15%;
 }
