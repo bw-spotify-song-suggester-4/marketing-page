@@ -124,21 +124,108 @@
                     @media @mobile {
                         margin: 10% 6%;
                     }
+
+                    .profileImgContainer {
+                        position: relative;
+                        border-radius: 50%;
+                        .profileImg {
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 50%;
+
+                            &#carlosImg { .backgroundImage(url('../img/profiles/carlos-de-santiago.jpg')); }
+                            &#claudiaImg { .backgroundImage(url('../img/profiles/claudia-chajon.jpg')); }
+                            &#johnImg { .backgroundImage(url('../img/profiles/john-humenczuk.png')); }
+                            &#jonathanImg { .backgroundImage(url('../img/profiles/jonathan-ross.jpg')); }
+                            &#sarahImg { .backgroundImage(url('../img/profiles/sarah-xu.jpg')); }
+                            &#shandaImg { .backgroundImage(url('../img/profiles/shanda-woods.png')); }
+                            &#aaronImg { .backgroundImage(url('../img/profiles/aaron-merritt.jpg')); }
+                            &#ramontaImg { .backgroundImage(url('../img/profiles/ramonta-lee.jpg')); }
+                            &#rajImg { .backgroundImage(url('../img/profiles/raj-upadhyaya.jpg')); }
+                            &#fabricioImg { .backgroundImage(url('../img/profiles/fabricio-bezerra.jpg')); }
+                            &#genardImg { .backgroundImage(url('../img/profiles/genard-ivan-tejano.png')); }
+                            
+                            .afterFadedLayer(black, 25%);
+
+                            &:after {
+                                border-radius: 100%;
+                                border: solid @whammy-white 1px;
+                                opacity: 0;
+                                transition-property: opacity;
+                                transition-duration: 500ms;
+                                transition-delay: 0;
+                                
+                            }
+                        }
+
+                        .memberLinksDesktop {
+                            display: none;
+
+                            // Center asolute objects
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+
+                            a {
+                                color: @whammy-white;
+                                margin: 5px;
+
+                                i { 
+                                    transition-property: transform;
+                                    transition-duration: 300ms;
+                                }
+                                
+
+                                &:hover {
+                                    i {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }
+                        }
+   
+                        &:hover {
+                            .memberLinksDesktop {
+                                display: block;
+                            }
+
+                            .profileImg {
+                                &:after {
+                                    opacity: 1;   
+                                }
+                            }
+                        }
+
+                    }                    
     
                     .memberName {
                         font-size: 2.5rem;
                         text-align: center;
+                        padding: 10px 0;
+                    }
+
+                    .memberLinksTablet {
+                        display: none;
+
+                        @media @tablet {
+                            display: inline;
+                        }
+
+                        a {
+                            color: @whammy-white;
+                            padding: 0 7px;
+                        }
                     }
     
                     .description {
                         font-size: 1.8rem;
-                        // font-style: italic;
+
+                        @media @tablet {
+                            padding-bottom: 10px;
+                        }
                     }
-    
-                    img {
-                        width: 200px;
-                        border-radius: 50%;
-                    }
+                    
                 }
             }
             
