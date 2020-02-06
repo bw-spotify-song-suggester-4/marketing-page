@@ -728,6 +728,13 @@ footer p {
   color: #FFFFFF;
   margin: 5px;
 }
+.aboutSection .container .teamSection .teamSectionContainer .teamMember .profileImgContainer .memberLinksDesktop a i {
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+.aboutSection .container .teamSection .teamSectionContainer .teamMember .profileImgContainer .memberLinksDesktop a:hover i {
+  transform: scale(1.2);
+}
 .aboutSection .container .teamSection .teamSectionContainer .teamMember .profileImgContainer:hover .memberLinksDesktop {
   display: block;
 }
@@ -753,6 +760,11 @@ footer p {
 }
 .aboutSection .container .teamSection .teamSectionContainer .teamMember .description {
   font-size: 1.8rem;
+}
+@media (max-width: 800px) {
+  .aboutSection .container .teamSection .teamSectionContainer .teamMember .description {
+    padding-bottom: 10px;
+  }
 }
 .aboutSection .container .bottomSection {
   display: flex;

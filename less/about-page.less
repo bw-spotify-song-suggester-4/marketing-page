@@ -146,6 +146,7 @@
                             &#genardImg { .backgroundImage(url('../img/profiles/genard-ivan-tejano.png')); }
                             
                             .afterFadedLayer(black, 25%);
+
                             &:after {
                                 border-radius: 100%;
                                 border: solid @whammy-white 1px;
@@ -169,6 +170,18 @@
                             a {
                                 color: @whammy-white;
                                 margin: 5px;
+
+                                i { 
+                                    transition-property: transform;
+                                    transition-duration: 300ms;
+                                }
+                                
+
+                                &:hover {
+                                    i {
+                                        transform: scale(1.2);
+                                    }
+                                }
                             }
                         }
    
@@ -207,6 +220,10 @@
     
                     .description {
                         font-size: 1.8rem;
+
+                        @media @tablet {
+                            padding-bottom: 10px;
+                        }
                     }
                     
                 }
