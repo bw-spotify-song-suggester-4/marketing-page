@@ -1,6 +1,13 @@
 body {
   background-color: #171330;
 }
+@media (max-width: 1000px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 body .aboutPage {
   display: flex;
   flex-direction: column;
@@ -11,6 +18,15 @@ body .aboutPage {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (max-width: 500px) {
+  body .aboutPage {
+    display: flex;
+    flex-direction: column;
+  }
+  body .aboutPage P {
+    font-size: 25px;
+  }
 }
 body h1 {
   font-size: 80px;
@@ -30,6 +46,24 @@ body .Team {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1000px) {
+  body .Team {
+    display: flex;
+    flex-direction: column;
+  }
+  body .Team P {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  body .Team {
+    display: flex;
+    flex-direction: column;
+  }
+  body .Team P {
+    font-size: 13px;
+  }
+}
 body .Team h2 {
   font-size: 2rem;
   color: #FFFFFF;
@@ -40,12 +74,25 @@ body .Team .Carlos {
   align-items: flex-start;
   width: 100%;
 }
+@media (max-width: 1000px) {
+  body .Team .Carlos {
+    display: flex;
+    flex-direction: row;
+  }
+}
 body .Team .Fabricio {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: row-reverse;
   width: 100%;
+}
+@media (max-width: 1000px) {
+  body .Team .Fabricio {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 body .Team .Ivan {
   display: flex;
@@ -60,6 +107,13 @@ body .Team .John {
   flex-direction: row-reverse;
   width: 100%;
 }
+@media (max-width: 1000px) {
+  body .Team .John {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
 body .Team .Ross {
   display: flex;
   justify-content: flex-start;
@@ -72,6 +126,13 @@ body .Team .Raj {
   align-items: flex-end;
   flex-direction: row-reverse;
   width: 100%;
+}
+@media (max-width: 1000px) {
+  body .Team .Raj {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 body .Team .Sarah {
   display: flex;
@@ -86,6 +147,13 @@ body .Team .Shanda {
   flex-direction: row-reverse;
   width: 100%;
 }
+@media (max-width: 1000px) {
+  body .Team .Shanda {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
 body .Team .Claudia {
   display: flex;
   justify-content: flex-start;
@@ -98,6 +166,13 @@ body .Team .Lee {
   align-items: flex-end;
   flex-direction: row-reverse;
   width: 100%;
+}
+@media (max-width: 1000px) {
+  body .Team .Lee {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 body .Team img {
   padding: 2%;
