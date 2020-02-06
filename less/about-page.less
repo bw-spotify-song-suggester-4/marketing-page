@@ -1,0 +1,162 @@
+.aboutHeader {
+    height: 320px;
+    .backgroundImage(url('../img/about-bg.jpg'));
+    .displayFlex(@direction: column, @align: flex-start, @justify: space-evenly);
+
+    a {
+        margin: 4% 10% 1% 10%;
+        padding: 0;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .rectangle1 {
+        .fadedRectangle(446px);
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+.aboutSection {
+    p {
+        font-size: 2rem;
+    }
+
+    .highlight {
+        max-width: 400px;
+        font-size: 3.5rem;
+        line-height: 35px;
+        font-weight: 900;
+        letter-spacing: 7px;
+        text-align: right;
+        .crookedBackground(@plush-pink);
+        &:after {
+            border-radius: 5px;
+        }
+    }
+
+    .container {
+        .container();
+
+        .aboutText {
+            padding: 10% 20%;
+            margin-bottom: 7%;
+            text-align: center;
+            line-height: 1.5;
+            .displayFlex(@direction: column);
+            .backgroundLayer(black, 80%);
+            border-radius: 15px;            
+
+            @media @mobile {
+                margin-bottom: 100px;
+                padding: 10% 10%;
+            }
+
+            p {
+                .displayFlex(@direction: column);
+
+                span {
+                    margin-bottom: 20px;
+                }
+            }            
+
+            div {
+                width: 100%;
+                .displayFlex(@justify: space-around);
+                flex-wrap: wrap;
+
+                @media @tablet {
+                    * {
+                        margin: 5% 0;
+                    }
+                }
+
+                @media @mobile {
+                    * {
+                        margin: 10% 0;
+                    }
+                }
+
+
+                .why {
+                    font-family: @header-font;
+                    font-size: 3.5rem;
+                    letter-spacing: 7px;
+                }
+            }
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .teamSection {
+            .displayFlex(@direction: column);
+            flex-wrap: wrap;
+
+            padding: 4%;
+            margin: 4% 0;
+            .backgroundLayer(black, 80%);
+            border-radius: 15px;
+
+            .sectionName {
+                margin: 7% 0 2%;
+                font-size: 3.8rem;
+                letter-spacing: 4px;
+                align-self: flex-start;
+
+                .crookedBackground(@plush-pink);
+            }
+            .teamSectionContainer {
+                .displayFlex();
+                width: 100%;
+                flex-wrap: wrap;
+                .teamMember {
+                    .displayFlex(@direction: column);
+                    margin: 4% 6%;
+
+                    @media @mobile {
+                        margin: 10% 6%;
+                    }
+    
+                    .memberName {
+                        font-size: 2.5rem;
+                        text-align: center;
+                    }
+    
+                    .description {
+                        font-size: 1.8rem;
+                        // font-style: italic;
+                    }
+    
+                    img {
+                        width: 200px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            
+        }
+
+        .bottomSection {
+            .displayFlex(@justify: space-between);
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: auto;
+            * {
+                width: 47%;
+                margin: 10% 0 0;
+
+                @media @mobile {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
