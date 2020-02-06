@@ -10,14 +10,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFlnl0k30e0.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFlnl0k30e0.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
@@ -193,6 +193,28 @@ header {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 1000px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .rectangle1 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .rectangle1 {
+    display: none;
+  }
+}
 header img {
   padding: 1%;
 }
@@ -214,12 +236,23 @@ header .rectangle2 p {
   font-size: 3.6rem;
   font-family: 'Abril Fatface', cursive;
 }
-header .btn {
-  position: absolute;
+header .navbar {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+header .navbar .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 320px;
   height: 80px;
   right: 10%;
   bottom: 15%;
+  margin: auto;
   color: #FFFFFF;
   text-decoration: none;
   font-family: 'Muli', sans-serif;
@@ -229,49 +262,9 @@ header .btn {
   border-radius: 35px;
   background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 0%, rgba(239, 1, 159, 0) 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
-header .btn:hover {
+header .navbar .btn:hover {
   background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 40%, rgba(239, 1, 159, 0) 100%);
-}
-header .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-}
-header .navbar a {
-  width: 200px;
-  height: 50px;
-  right: 10%;
-  bottom: 15%;
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: 'Muli', sans-serif;
-  font-weight: 900;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  border-radius: 35px;
-  background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 0%, rgba(239, 1, 159, 0) 100%);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-header .navbar a:hover {
-  background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 40%, rgba(239, 1, 159, 0) 100%);
-}
-header .navbar .navItems {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly;
 }
 section {
   background-color: #171330;
@@ -283,53 +276,147 @@ section {
 section .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
-  margin: 7% 10%;
-  max-width: 1400px;
+  justify-content: space-between;
+  margin: 5% ;
 }
 section .container .box {
-  border: 4px solid #FFFFFF;
-  padding: 2% 3%;
-  width: 100%;
-  height: 340px;
-  margin-bottom: 2%;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-}
-@media (max-width: 1000px) {
-  section .container .box {
-    height: 390px;
-  }
-}
-@media (max-width: 800px) {
-  section .container .box {
-    height: 440px;
-  }
-}
-section .container .box h3,
-section .container .box p {
-  width: 80%;
+  border: 4px solid #FFFFFF;
+  padding: 2%;
+  height: 50vh;
+  text-align: center;
 }
 section .container .box h3 {
-  font-size: 2.4rem;
-  line-height: 3.2rem;
+  font-size: 20px ;
 }
 section .container .box p {
-  margin: 5% 0;
-  line-height: 2.2rem;
-}
-section .container .box .icons {
   width: 100%;
+  font-size: 25px;
 }
-section .container .box .icons .iconsRow {
-  width: 100%;
+section .container .iconsRow {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 1000px) {
+  section .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+}
+body {
+  background-color: #171330;
+}
+body .aboutPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../Img/img/AdobeStock_188698373\ 2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body h1 {
+  font-size: 80px;
+  color: #FFFFFF;
+}
+body p {
+  padding: 5%;
+  margin: 2% 0;
+  line-height: 2.2rem;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75));
+}
+body .Team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .Team h2 {
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+body .Team .Carlos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+body .Team .Fabricio {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+body .Team .Ivan {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+body .Team .John {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+body .Team .Ross {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+body .Team .Raj {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+body .Team .Sarah {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+body .Team .Shanda {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+body .Team .Claudia {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+body .Team .Lee {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+body .Team img {
+  padding: 2%;
+  border-radius: 50%;
+  width: 15%;
 }
