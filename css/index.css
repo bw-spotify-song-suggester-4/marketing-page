@@ -520,7 +520,7 @@ footer p {
   margin: 0 10%;
 }
 .aboutContent .container .aboutText {
-  padding: 10% 20%;
+  padding: 7% 20%;
   margin-bottom: 7%;
   text-align: center;
   line-height: 1.5;
@@ -538,7 +538,7 @@ footer p {
   }
 }
 .aboutContent .container .aboutText h2 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 @media (max-width: 500px) {
   .aboutContent .container .aboutText h2 {
@@ -587,7 +587,7 @@ footer p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 4%;
+  padding: 0 4%;
   margin: 4% 0;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
